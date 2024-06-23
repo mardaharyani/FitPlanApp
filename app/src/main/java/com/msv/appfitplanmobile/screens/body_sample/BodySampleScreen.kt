@@ -90,13 +90,8 @@ fun BodySampleScreen(navController: NavController) {
                         height = ""
                         date = ""
                     } else {
-                        // Handle case where weight or height is not a valid number
-                        // For example, show an error message or log the error
-                        // In this example, we'll clear fields and show an error message
                         weight = ""
                         height = ""
-                        // Show an error message or feedback
-                        // Example: showError("Weight and height must be valid numbers")
                     }
                 },
                 modifier = Modifier.align(Alignment.CenterHorizontally)
