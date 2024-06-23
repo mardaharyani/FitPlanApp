@@ -177,7 +177,7 @@ fun DateBox(date: String, isActive: Boolean = false) {
 
 @Composable
 fun NotesSection(viewModel: NoteViewModel) {
-    val listNote by viewModel.listNote.collectAsState() // Mengamati StateFlow dari NoteViewModel
+    val listNote by viewModel.listNote.collectAsState() 
 
     Column(modifier = Modifier.padding(top = 16.dp)) {
         Text("Notes", color = Color.White, fontSize = 18.sp, fontWeight = FontWeight.Bold)
