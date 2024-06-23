@@ -151,7 +151,6 @@ fun HistorySection(navController: NavController) {
 @Composable
 fun WeightSection(navController: NavController) {
     SectionCard(title = "Weight") {
-        // Placeholder values, should be replaced with actual values from local database
         var firstHeight by remember { mutableStateOf("160") }
         var recentHeight by remember { mutableStateOf("165") }
 
@@ -217,7 +216,6 @@ fun WeightSection(navController: NavController) {
 @Composable
 fun HeightSection(navController: NavController) {
     SectionCard(title = "Height") {
-        // Placeholder values, should be replaced with actual values from local database
         var firstHeight by remember { mutableStateOf("160") }
         var recentHeight by remember { mutableStateOf("165") }
 
@@ -271,7 +269,7 @@ fun HeightSection(navController: NavController) {
                 shape = RoundedCornerShape(10.dp),
                 modifier = Modifier
                     .padding(top = 8.dp)
-                    .align(Alignment.CenterHorizontally) // Align button to center horizontally
+                    .align(Alignment.CenterHorizontally) 
                     .width(120.dp)
             ) {
                 Text("Add Height")
