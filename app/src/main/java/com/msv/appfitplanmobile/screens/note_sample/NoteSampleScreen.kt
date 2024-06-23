@@ -71,10 +71,8 @@ fun NoteSampleScreen(navController: NavController) {
             Button(
                 onClick = {
                     viewModel.setNote(Note(date, note))
-                    // Reset fields after saving
                     note = ""
                     date = ""
-                    // Dismiss the dialog
                     navController.popBackStack()
                 },
                 modifier = Modifier.padding(8.dp)
@@ -85,7 +83,6 @@ fun NoteSampleScreen(navController: NavController) {
         dismissButton = {
             Button(
                 onClick = {
-                    // Dismiss the dialog without saving
                     navController.popBackStack()
                 },
                 modifier = Modifier.padding(8.dp)
